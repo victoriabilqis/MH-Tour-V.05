@@ -1,0 +1,8 @@
+MH Tour V8.0.5
+
+IMPORTANT:
+- The GitHub artifact contains the verified APK.
+- Install ONLY MH-Tour-V8.0.5-Android-Install.apk.
+- Do not rename a ZIP file to .apk.
+- If an older MH Tour is installed, uninstall it before testing this build.
+- GitHub Actions verifies ZIP integrity, zipalign, APK signature and package metadata.

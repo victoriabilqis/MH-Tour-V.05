@@ -1,0 +1,36 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.mhtour.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.mhtour.app'
+        minSdk 26
+        targetSdk 35
+        versionCode 12
+        versionName '8.0.5'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.15.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.media3:media3-exoplayer:1.5.1'
+    implementation 'com.google.zxing:core:3.5.3'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/cream" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+<TextView android:text="☾ MH TOUR" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/green" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="Audio Guide Umroh • Makkah • Madinah" android:gravity="center" android:textColor="@color/gold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp"/>
+<RadioGroup android:id="@+id/modeGroup" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+<RadioButton android:id="@+id/guideMode" android:text="🎙 GUIDE / MUTHAWWIF" android:checked="true" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+<RadioButton android:id="@+id/jemaahMode" android:text="👂 JEMAAH (PENDENGAR)" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+</RadioGroup>
+<EditText android:id="@+id/groupCode" android:hint="Kode Grup (Jemaah: masukkan kode Guide)" android:inputType="textCapCharacters" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/scanButton" android:text="📷 SCAN QR GUIDE • LANGSUNG TERHUBUNG" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/connectButton" android:text="🔗 INPUT KODE • LANGSUNG TERHUBUNG" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<EditText android:id="@+id/audioPath" android:hint="Untuk Guide: pilih file MP3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/selectAudio" android:text="PILIH AUDIO MP3" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/micButton" android:text="🎙 MULAI MIC LIVE (HANYA GUIDE)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/startGuide" android:text="MULAI SIARAN AUDIO GUIDE" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/showQr" android:text="TAMPILKAN QR KONEKSI" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/muteGuide" android:text="🔇 MUTE JEMAAH" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<SeekBar android:id="@+id/guideVolume" android:max="100" android:progress="100" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/volumeLabel" android:text="Volume Jemaah: 100%" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/clientCount" android:text="Jemaah terhubung: 0" android:textStyle="bold" android:textSize="18sp" android:gravity="center" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:id="@+id/status" android:text="Status: siap" android:textSize="16sp" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/playButton" android:text="▶ DENGARKAN STREAMING GUIDE" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<Button android:id="@+id/stopButton" android:text="■ STOP" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:text="🕌 MH Tour • Guide berbicara • Jemaah hanya mendengar • 🌴 🐪" android:gravity="center" android:textColor="@color/gold" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>
